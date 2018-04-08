@@ -1,10 +1,247 @@
 /*
- * Theme Name: Nokhbe
- * Description: Minimal Blog and Multipurpose Persian Wordpress theme
- * Author: Amirition
- * Author URI: http://amirition.ir
- * Text Domain: nokhbe
- *
- */
+ Theme Name: Nokhbe
+ Description: Minimal Blog and Magazine Persian Wordpress theme
+ Author: Amirition
+ Author URI: http://amirition.ir
+ Text Domain: nokhbe
+ Version: 1.0
+*/
 
-/* Font Styles */
+/* Registering Fonts */
+@font-face {
+    font-family: "samim";
+    src: url('fonts/Samim-FD.eot'), url('fonts/Samim-FD.ttf'), url('fonts/Samim-FD.woff');
+}
+@font-face {
+    font-family: "samim-bold";
+    src: url('fonts/Samim-Bold-FD.eot'), url('fonts/Samim-Bold-FD.ttf'), url('fonts/Samim-Bold-FD.woff');
+}
+
+/* General Styling */
+p, li, a, button, input, span, div {
+    font-family: "samim";
+    color: #757575;
+}
+a:hover {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "samim-bold";
+    color: #616161;
+}
+.center {
+    justify-content: center;
+}
+body {
+    background: #fafafa;
+}
+.text-left {
+    justify-content: flex-end;
+}
+button.button {
+    margin-bottom: 0;
+}
+button.button.primary:hover {
+    color: #fff;
+}
+/* Header */
+.site-title {
+    padding: 1.5rem 0;
+}
+.site-title h1 {
+    text-align: center;
+    color: #626262;
+    font-size: 30px;
+    font-family: "samim-bold";
+}
+.top-bar-left i {
+    font-size: 18px;
+}
+.top-bar-left .fa-instagram {
+    color: #966B9D;
+}
+.top-bar-left .fa-telegram {
+    color: #20A4F3;
+}
+.top-bar-left .fa-facebook {
+    color: #4E8098;
+}
+.top-bar-left .fa-linkedin {
+    color: #F24236;
+}
+.top-bar-left .fa-twitter {
+    color: #31AFD4;
+}
+.features {
+    background: #4F5655;
+}
+.features .cell.medium-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    height: 250px;
+}
+.features .card img {
+    width: 100%;
+}
+.features a {
+    position: absolute;
+    bottom: -35px;
+    padding: 1.5rem 1rem 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    width: 100%;
+    /* IE10+ */
+    background-image: -ms-linear-gradient(top, transparent 0%, rgba(0,0,0,.85) 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,.85) 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, transparent 0%, rgba(0,0,0,.85) 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(100, rgba(0,0,0,.85)));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.85) 100%);
+    /* W3C Markup */
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.85) 100%);
+}
+.features h1 {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-family: "samim";
+}
+.features .card.medium-3:hover a {
+    bottom: 0;
+}
+.features a .feature-meta {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.feature-meta span {
+    font-size: 12px;
+    color: #fff;
+}
+.secondary-menu {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* sidebar */ 
+.sidebar {
+    color: #616161;
+    padding: .5rem;
+}
+.sidebar-left h1 {
+    text-align: center;
+    font-size: 16px;
+    margin: .5rem 0;
+}
+.sidebar-left .sidebar-article {
+    margin-bottom: 1rem;
+}
+.sidebar-left .sidebar-article figure {
+    position: relative;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.sidebar-left .sidebar-article figure:hover .sidebar-overlay {
+    height: 100%;
+}
+.sidebar-left .sidebar-article figure:hover .sidebar-overlay a {
+    color: #fff;
+}
+.sidebar-left .sidebar-article figure .sidebar-overlay a {
+    color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-left .sidebar-article figure .sidebar-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    height: 0;
+    -webkit-transitiaon: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+.sidebar-right h2 {
+    background: #2E86AB;
+    color: #fff;
+    font-size: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: .5rem;
+}
+.sidebar-right .menu a {
+    padding-right: 0;
+    position: relative;
+    font-size: 14px;
+    right: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.sidebar-right .menu a:hover {
+    right: 10px;
+}
+.sidebar-right .menu li a::before {
+    content: "\f104"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: 5px;
+}
+.sidebar-category {
+    margin-bottom: 1.5rem;
+}
+/* Index Articles */
+.main-content img {
+    border-radius : 4px;
+}
+.index-main-article {
+    margin-left: 0;
+    margin-right: 0;
+}
+.index-main-article h1 {
+    font-size: 16px;
+}
+.index-main-article p, .index-main-article span {
+    font-size: 13px;
+    line-height: 2;
+}
+.index-meta span {
+    color: #002400;
+}
+.index-meta span:nth-child(2) {
+    color: #E3170A;
+}
+.index-meta a {
+    font-size: 14px;
+    color: #2E86AB;
+}
+.index-meta {
+    margin: 1rem 0;
+    align-items: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.index-meta a button.button {
+    font-size: 13px;
+    background: #2E86AB;
+    color: #fff;
+}
