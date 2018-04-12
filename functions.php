@@ -1,8 +1,7 @@
 <?php
 
 // Includes
-include 'include/options.php';
-include 'include/options-page.php';
+include 'include/customizer.php';
 
 //Register Styles and Scripts
 function enqueue_scripts() {
@@ -40,19 +39,6 @@ function register_nk_widgets () {
 }
 add_action( 'widgets_init', 'register_nk_widgets' );
 
-
-// Register Admin Menus
-function nk_admin_menus () {
-	add_menu_page(
-		'تنظیمات چوسته نخبه',
-		'تنظیمات نخبه',
-		'edit_theme_options',
-		'nokhbe_options',
-		'nokhbe_theme_options'
-	);
-}
-add_action( 'admin_menu', 'nk_admin_menus' );
-
 // Registering Admin Styles
 function nk_admin() {
 	add_action( 'admin_enqueue_scripts', 'nk_admin_enqueue' );
@@ -61,8 +47,5 @@ function nk_admin_enqueue() {
 	if(!isset($_GET['page']) || $_GET['page'] != 'nokhbe_options') {
 		return;
 	}
-	wp_enqueue_style('foundation', get_template_directory_uri() . '/css/foundation.min.css');
-	wp_enqueue_style('fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css');
-	wp_enqueue_style('main_style', get_template_directory_uri() . '/style.css');
 }
 add_action( 'admin_init', 'nk_admin' );

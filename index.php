@@ -38,9 +38,8 @@ get_header();
 		get_template_part( 'template-parts/index-loop' );
 		?>
     </div>
-    <aside class="cell medium-3 sidebar sidebar-left grid-x">
-
-        <div class="cell medium-12 sidebar-article">
+    <aside class="cell medium-3 sidebar sidebar-left grid-y">
+        <div class="sidebar-article grid-x">
             <figure>
                 <img src="http://localhost/wp/wp-content/themes/nokhbe/img/demo.jpg">
                 <div class="sidebar-overlay grid-x">
@@ -50,7 +49,7 @@ get_header();
             <a><h1>عنوان این نوشته </h1></a>
         </div>
 
-        <div class="cell medium-12 sidebar-article">
+        <div class="sidebar-article grid-x">
             <figure>
                 <img src="http://localhost/wp/wp-content/themes/nokhbe/img/demo.jpg">
                 <div class="sidebar-overlay grid-x">
@@ -60,7 +59,7 @@ get_header();
             <a><h1>عنوان این نوشته </h1></a>
         </div>
 
-        <div class="cell medium-12 sidebar-article">
+        <div class="sidebar-article grid-x">
             <figure>
                 <img src="http://localhost/wp/wp-content/themes/nokhbe/img/demo.jpg">
                 <div class="sidebar-overlay grid-x">
@@ -71,7 +70,6 @@ get_header();
         </div>
 
     </aside>
-
 </div>
 <?php
 get_footer();
