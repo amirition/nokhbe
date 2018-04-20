@@ -379,3 +379,119 @@ footer h2 {
         transform: scale(1);
     }
 }
+
+/* Single Post */
+.single-post {
+    padding: 0 1.5rem;
+}
+.single-post h2 {
+    font-size: 21px;
+}
+.single-post p, .single-post li, .single-post a {
+    font-size: 15px;
+    line-height: 2;
+}
+.single-meta {
+    margin: 1rem 0;
+}
+.single-meta div {
+    color: #2E86AB;
+}
+.single-post .tags {
+    font-weight: bold;
+    font-size: 14px;
+}
+.single-post .tags a {
+    background: #875f9a;
+    color: #f1f1f1;
+    font-size: 14px;
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 3px;
+}
+.single-post .categories {
+    margin: 2rem 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.single-post .categories a {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #26a65b;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+.telegram-share a, .telegram-share a:hover, .telegram-share:visited, .telegram-share:focus {
+    color: #0088cc;
+    font-size: 16px;
+}
+.comment-form .button, .comment-form .button:hover, .comment-form .button:focus {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+.comment-form p {
+    margin-right: 1rem;
+}
+.comment {
+    padding: 1rem 0 0;
+    margin-right: .2rem;
+}
+.comment p {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.reply a {
+    color: #2E86AB;
+    font-weight: bold;
+    font-size: 14px;
+}
+.comments ul {
+    margin-right: 0;
+}
+#comments > .children {
+    width: 100%;
+}
+#comments > .children > .comment {
+    border-color: #2E86AB;
+}
+#comments > .children > .children > .comment {
+    border-color: #875f9a;
+}
+#comments > .children > .children > .children > .comment {
+    border-color: #d24d57;
+}
+#comments > .children > .children > .children > .children > .comment {
+    border-color: #26a65b;
+}
+.comment-respond textarea, .comment-respond input {
+    font-size: 14px;
+    line-height: 2;
+    color: #626262;
+}
+.single-post h1, .single-page h1 {
+    font-size: 25px;
+}
+
+.single-post h2, .single-page h2 {
+    font-size: 22px;
+}
+
+.single-post h3, .single-page h3 {
+    font-size: 19px;
+}
+
+.single-post h4, .single-page h4 {
+    font-size: 17px;
+}
+
+.single-post h5, .single-page h5 {
+    font-size: 15px;
+}
+
+.single-post h6, .single-page h6 {
+    font-size: 13px;
+}
