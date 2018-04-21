@@ -511,6 +511,6 @@ footer h2 {
 .not-found h2 {
     color: #D24D57;
 }
-.not-found .button {
+.not-found .button.primary {
     margin-top: 1rem;
 }
