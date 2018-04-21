@@ -476,7 +476,7 @@ footer h2 {
     font-size: 25px;
 }
 
-.single-post h2, .single-page h2 {
+.single-post h2, .single-page h2, .archive-page h2 {
     font-size: 22px;
 }
 
@@ -494,4 +494,12 @@ footer h2 {
 
 .single-post h6, .single-page h6 {
     font-size: 13px;
+}
+
+/* Archive page */
+.archive-title {
+    margin: 0 1rem 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #2E86AB;
 }
