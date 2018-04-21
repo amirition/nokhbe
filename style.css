@@ -429,7 +429,8 @@ footer h2 {
     color: #0088cc;
     font-size: 16px;
 }
-.comment-form .button, .comment-form .button:hover, .comment-form .button:focus {
+.comment-form .button, .comment-form .button:hover, .comment-form .button:focus,
+.not-found .button, .not-found .button:hover, .not-found .button:focus{
     color: #f1f1f1;
     font-weight: bold;
 }
@@ -502,4 +503,14 @@ footer h2 {
     text-align: center;
     padding-bottom: 1rem;
     color: #2E86AB;
+}
+.not-found {
+    padding: 0 1.5rem;
+    text-align: center;
+}
+.not-found h2 {
+    color: #D24D57;
+}
+.not-found .button {
+    margin-top: 1rem;
 }
