@@ -14,7 +14,7 @@ if ($gallery_posts->have_posts()){
 					<a href="<?php the_permalink() ?>"><i class="fa fa-2x fa-search"></i> </a>
 				</div>
 			</figure>
-			<a><h1><?= the_title() ?></h1></a>
+			<a href="<?php the_permalink(); ?>"><h1><?= the_title() ?></h1></a>
 		</div>
 		<?php
 	}

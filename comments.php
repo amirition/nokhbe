@@ -2,23 +2,23 @@
 function nk_comment_template($comment, $args, $depth) {
     ?>
     <div class="comment card cell medium-12 grid-x grid-margin-x">
-        <div class="cell medium-2">
+        <div class="cell small-2">
             <img src="<?= get_avatar_url(get_the_author_meta('ID')); ?>">
         </div>
-        <div class="cell medium-10 grid-x">
-            <div class="comment-header cell medium-12 grid-x">
-                <h6 class="cell medium-3 text-right"><?php comment_author(); ?></h6>
-                <p class="cell medium-5 medium-offset-4 text-left"> <?= get_comment_date() . ' - ' . get_comment_time() ?></p>
+        <div class="cell small-10 grid-x">
+            <div class="comment-header cell small-12 grid-x">
+                <h6 class="cell small-3 text-right"><?php comment_author(); ?></h6>
+                <p class="cell small-5 small-offset-4 text-left"> <?= get_comment_date() . ' - ' . get_comment_time() ?></p>
             </div>
-            <p class="cell medium-12"><?php comment_text($comment); ?></p>
-            <div class="comment-footer cell medium-12 grid-x">
-                <div class="cell medium-10">
+            <p class="cell small-12"><?php comment_text($comment); ?></p>
+            <div class="comment-footer cell small-12 grid-x">
+                <div class="cell small-10">
                     <?php
                     if ( $comment->comment_approved == '0' ) { ?>
                     <em class="comment-awaiting-moderation"><?php __( 'دیدگاه شما در انتظار بررسی است.', 'nokhbe' ); ?></em><?php
                     } ?>
                 </div>
-                <div class="cell medium-2 reply text-left">
+                <div class="cell small-2 reply text-left">
 	                <?php
 	                comment_reply_link(
 		                array_merge(

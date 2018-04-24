@@ -6,7 +6,7 @@ if ($featured_posts->have_posts()) {
 	while($featured_posts->have_posts()) {
 		$featured_posts->the_post();
 		?>
-		<div class="grid-y cell medium-3 card">
+		<div class="grid-y cell large-3 medium-6 card header-article">
 			<img src="<?= get_the_post_thumbnail_url() ?>">
 			<a href="<?php the_permalink()?>">
 				<h1><?= the_title() ?></h1>

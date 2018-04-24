@@ -93,7 +93,7 @@ button.button.primary:hover {
     background: #4F5655;
 }
 
-.features .cell.medium-3 {
+.features .header-article {
     margin-top: 1rem;
     margin-bottom: 1rem;
     position: relative;
@@ -136,7 +136,7 @@ button.button.primary:hover {
     font-family: "samim";
 }
 
-.features .card.medium-3:hover a {
+.features .header-article:hover a {
     bottom: 0;
 }
 
@@ -384,6 +384,23 @@ footer h2 {
 .single-post {
     padding: 0 1.5rem;
 }
+.single-post .wp-caption {
+    border-radius: 7px;
+    BACKGROUND: #f1f1f1;
+    margin-bottom: 1rem;
+}
+.single-post .wp-caption img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+.single-post .wp-caption-text {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.single-post .featured-image {
+    margin-bottom: 1rem;
+}
 .single-post h2 {
     font-size: 21px;
 }
@@ -421,11 +438,12 @@ footer h2 {
     -moz-border-radius: 4px;
     border-radius: 4px;
     padding: 5px 10px;
+    margin: 3px;
     background: #26a65b;
     font-size: 14px;
     color: #f1f1f1;
 }
-.telegram-share a, .telegram-share a:hover, .telegram-share:visited, .telegram-share:focus {
+.telegram-share span, .telegram-share a, .telegram-share a:hover, .telegram-share:visited, .telegram-share:focus {
     color: #0088cc;
     font-size: 16px;
 }
@@ -475,10 +493,12 @@ footer h2 {
 }
 .single-post h1, .single-page h1 {
     font-size: 25px;
+    display: block;
 }
 
 .single-post h2, .single-page h2, .archive-page h2 {
     font-size: 22px;
+    display: block;
 }
 
 .single-post h3, .single-page h3 {
@@ -487,6 +507,7 @@ footer h2 {
 
 .single-post h4, .single-page h4 {
     font-size: 17px;
+    display: block;
 }
 
 .single-post h5, .single-page h5 {
@@ -495,6 +516,7 @@ footer h2 {
 
 .single-post h6, .single-page h6 {
     font-size: 13px;
+    display: block;
 }
 
 /* Archive page */
@@ -513,4 +535,14 @@ footer h2 {
 }
 .not-found .button.primary {
     margin-top: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 650px) {
+    .features, footer.grid-margin-x {
+        margin-right: 0;
+    }
+    .copyright p, .copyright div {
+        text-align: center;
+    }
 }

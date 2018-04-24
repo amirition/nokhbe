@@ -12,13 +12,13 @@ $categories = get_the_category();
 		<div class="cell medium-6 single-post grid-x">
 			<h2><?= the_title(); ?></h2>
 			<div class="single-meta grid-x cell medium-12">
-				<div class="cell medium-4"><i class="fa fa-user"></i> <?php the_author() ?></div>
-				<div class="cell medium-4"><i class="fa fa-calendar"></i> <?= get_the_date() ?></div>
-				<div class="telegram-share cell medium-4">
-					<a title="اشتراک در تلگرام" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>" target="_blank"><i class="fa fa-telegram"></i>  اشتراک گذاری در تلگرام </a>
+				<div class="cell small-4"><i class="fa fa-user"></i> <?php the_author() ?></div>
+				<div class="cell small-4"><i class="fa fa-calendar"></i> <?= get_the_date() ?></div>
+				<div class="telegram-share cell small-4">
+					<a title="اشتراک در تلگرام" href="https://telegram.me/share/url?url=<?php the_permalink(); ?>" target="_blank"><i class="fa fa-telegram"></i>  اشتراک <span class="hide-for-medium-only">گذاری در تلگرام</span> </a>
 				</div>
 			</div>
-			<div class="cell medium-12">
+			<div class="cell medium-12 featured-image">
 				<img src="<?= get_the_post_thumbnail_url() ?>">
 			</div>
 			<p><?php the_content(); ?></p>
@@ -27,11 +27,11 @@ $categories = get_the_category();
 				<i class="fa fa-tags"></i> <?php the_tags('برچسب ها: ', ' ') ?>
 			</div>
 			<div class="categories cell medium-12">
-				<i class="fa fa-list-ul"></i>
+				<i class="fa fa-list-ul"></i> دسته بندی ها:
 				<?php
 				foreach ($categories as $category) {
 					?>
-					دسته بندی ها: <a href="<?= get_category_link($category->term_id)?>"> <?= $category->name ?> </a>
+					 <a href="<?= get_category_link($category->term_id)?>"> <?= $category->name ?> </a>
 					<?php
 				}
 				?>
