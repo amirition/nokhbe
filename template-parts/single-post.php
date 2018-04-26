@@ -12,10 +12,10 @@ while(have_posts()) {
             <p class="cell medium-12"><?php the_excerpt() ?></p>
         </div>
         <div class="index-meta cell medium-12 grid-x">
-            <span class="cell small-3"><i class="fa fa-user"></i> <?php the_author() ?> </span>
-            <span class="cell small-3"><i class="fa fa-list"></i> <?= $category[0]->cat_name ?></span>
-            <span class="cell small-3"><i class="fa fa-comment"></i> <?= get_comments_number() ?> دیدگاه</span>
-            <a href="<?php the_permalink() ?>" class="cell small-3"> بیشتر بخوانید &raquo </a>
+            <span class="cell medium-3 small-4"><i class="fa fa-user"></i> <?php the_author() ?> </span>
+            <span class="cell medium-3 hide-for-small-only"><i class="fa fa-list"></i> <?= $category[0]->cat_name ?></span>
+            <span class="cell medium-3 small-4"><i class="fa fa-comment"></i> <?= get_comments_number() ?> دیدگاه</span>
+            <a href="<?php the_permalink() ?>" class="cell medium-3 small-4"> بیشتر بخوانید &raquo </a>
         </div>
     </div>
 

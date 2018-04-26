@@ -1,6 +1,7 @@
 <?php
 $featured_posts = new WP_Query( array(
-	'cat'                   =>  get_theme_mod("featured_cat")
+	'cat'                   =>  get_theme_mod("featured_cat"),
+    'posts_per_page'        =>  4
 ));
 if ($featured_posts->have_posts()) {
 	while($featured_posts->have_posts()) {

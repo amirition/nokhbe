@@ -40,12 +40,14 @@
         ?>
     </div>
 <nav class="top-bar grid-x cell medium-10 medium-offset-1 small-12 secondary-menu">
-	<?php wp_nav_menu( array(
-        'theme_location'            => 'main-menu',
-        'container'                 => false,
-        'depth'                     => 0,
-        'items_wrap'                => '<ul class="horizontal menu dropdown" data-responsive-menu>%3$s</ul>',
-        'walker'                    =>  new menu_walker()
-    ) );
+	<?php
+	wp_nav_menu(array(
+		'theme_container'                   =>  'top-menu',
+		'container'                         =>  false,
+		'menu_class'                        =>  'menu dropdown',
+		'items_wrap'                        =>  '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
+		'walker'                            =>  new menu_walker(),
+		'fallback_cb'                       =>  'f6_drill_menu_fallback'
+	));
 	?>
 </nav>
