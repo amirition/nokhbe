@@ -27,18 +27,28 @@
         </div>
         <div class="top-bar-left cell medium-7">
             <ul class="menu horizontal text-left">
-                <li><a href="<?= "http://telegram.me/" . get_theme_mod('telegram')?>"><i class="fa fa-telegram"></i> </a> </li>
-                <li><a href="<?= "http://instagram.com/" . get_theme_mod("instagram") ?>"><i class="fa fa-instagram"></i> </a> </li>
-                <li><a href="<?= "http://twitter.com/" . get_theme_mod("twitter") ?>"><i class="fa fa-twitter"></i> </a> </li>
+                <?php if (get_theme_mod('telegram')) {
+                    ?>
+                    <li><a href="<?= "http://telegram.me/" . get_theme_mod('telegram')?>"><i class="fa fa-telegram"></i> </a> </li>
+                <?php } if (get_theme_mod('instagram')) {
+                    ?>
+                    <li><a href="<?= "http://instagram.com/" . get_theme_mod("instagram") ?>"><i class="fa fa-instagram"></i> </a> </li>
+                <?php } if (get_theme_mod('twitter')) {
+                    ?>
+                    <li><a href="<?= "http://twitter.com/" . get_theme_mod("twitter") ?>"><i class="fa fa-twitter"></i> </a> </li>
+                <?php } if (get_theme_mod('facebook')) {
+                    ?>
                 <li><a href="<?= "http://facebook.com/" . get_theme_mod("facebook") ?>"><i class="fa fa-facebook"></i> </a> </li>
+                <?php } ?>
             </ul>
         </div>
     </header>
-    <div class="grid-x grid-margin-x cell medium-10 medium-offset-1 small-12 features">
-        <?php
-        get_template_part('template-parts/header-loop');
+    <?php if (get_theme_mod('featured_cat')) {
         ?>
-    </div>
+        <div class="grid-x grid-margin-x cell medium-10 medium-offset-1 small-12 features">
+            <?php get_template_part('template-parts/header-loop'); ?>
+        </div>
+    <?php } ?>
 <nav class="top-bar grid-x cell medium-10 medium-offset-1 small-12 secondary-menu">
 	<?php
 	wp_nav_menu(array(

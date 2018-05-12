@@ -11,7 +11,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
     ));
 
     $wp_customize->add_setting('twitter', array(
-        'default'                       => '#',
+        'default'                       => '',
     ));
 
     $wp_customize->add_control('twitter', array(
@@ -21,7 +21,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'settings'                      =>  'twitter'
     ));
     $wp_customize->add_setting('instagram', array(
-        'default'                       =>  '#'
+        'default'                       =>  ''
     ));
     $wp_customize->add_control('instagram', array(
         'type'                          =>  'text',
@@ -30,7 +30,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'settings'                      =>  'instagram'
     ));
     $wp_customize->add_setting('facebook', array(
-        'default'                       =>  '#'
+        'default'                       =>  ''
     ));
     $wp_customize->add_control('facebook', array(
         'type'                          =>  'text',
@@ -39,7 +39,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'settings'                      =>  'facebook'
     ));
     $wp_customize->add_setting('telegram', array(
-        'default'                       =>  '#'
+        'default'                       =>  ''
     ));
     $wp_customize->add_control('telegram', array(
         'type'                          =>  'text',
@@ -54,7 +54,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'description'                   =>  __('دسته بندی مطالبی را انتخاب کنید که میخواهید در بخش ویژه ی سایت به نمایش درآیند.', 'nokhbe'),
     ));
     $wp_customize->add_setting('featured_cat', array(
-        'default'                       =>  0
+        'default'                       =>  ''
     ));
     $wp_customize->add_control(new Category_Control($wp_customize, 'featured_cat', array(
         'settings'                      =>  'featured_cat',
@@ -71,7 +71,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'panel'                         =>  'rsidebar'
     ));
     $wp_customize->add_setting('rsidebar1_cat', array(
-        'default'                       =>  0
+        'default'                       =>  ''
     ));
 
     $wp_customize->add_control(new Category_Control($wp_customize, 'rsidebar1_cat', array(
@@ -92,7 +92,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'panel'                         =>  'rsidebar'
     ));
     $wp_customize->add_setting('rsidebar2_cat', array(
-        'default'                       =>  0
+        'default'                       =>  ''
     ));
 
     $wp_customize->add_control(new Category_Control($wp_customize, 'rsidebar2_cat', array(
@@ -113,7 +113,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
         'panel'                         =>  'rsidebar'
     ));
     $wp_customize->add_setting('rsidebar3_cat', array(
-        'default'                       =>  0
+        'default'                       =>  ''
     ));
 
     $wp_customize->add_control(new Category_Control($wp_customize, 'rsidebar3_cat', array(
@@ -142,7 +142,7 @@ function theme_customizer(WP_Customize_Manager $wp_customize){
     ));
 
     $wp_customize->add_setting('lsidebar_cat', array(
-        'default'                       =>  0
+        'default'                       =>  ''
     ));
 
     $wp_customize->add_control(new Category_Control($wp_customize, 'lsidebar_cat', array(
