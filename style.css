@@ -178,6 +178,9 @@ button.button.primary:hover {
 aside .menu a {
     line-height: 1.8;
 }
+aside .menu.vertical, footer .menu.vertical {
+    line-height: 2.4;
+}
 .sidebar {
     color: #616161;
     padding: .5rem;
@@ -448,7 +451,8 @@ footer h2 {
     font-size: 16px;
 }
 .comment-form .button, .comment-form .button:hover, .comment-form .button:focus,
-.not-found .button, .not-found .button:hover, .not-found .button:focus{
+.not-found .button, .not-found .button:hover, .not-found .button:focus, button.search-submit.success,
+button.search-submit.success:hover {
     color: #f1f1f1;
     font-weight: bold;
 }
