@@ -45,11 +45,11 @@ if ( post_password_required() ) {
 	<?php
 	$comments_arg = ( array(
 		'fields'               => array(
-			'author' => '<input class="cell medium-6" type="text" name="author" placeholder="نام شما" required>',
-			'email'  => '<input class="cell medium-6" type="email" name="email" placeholder="ایمیل شما" required>',
+			'author' => '<input class="cell medium-6" type="text" name="author" placeholder="' . __( 'نام شما', 'nokhbe' ) . '" required>',
+			'email'  => '<input class="cell medium-6" type="email" name="email" placeholder="'. __('ایمیل شما', 'nokhbe') . '" required>',
 			'url'    => ' '
 		),
-		'comment_field'        => '<textarea placeholder="دیدگاه خود را بنویسید ..." name="comment" class="cell medium-12" id="comment" rows="5" required> </textarea>',
+		'comment_field'        => '<textarea placeholder="'. __('دیدگاه خود را بنویسید', 'nokhbe') .'" name="comment" class="cell medium-12" id="comment" rows="5" required> </textarea>',
 		'class_form'           => 'comment-form grid-x grid-margin-x',
 		'class_submit'         => 'button primary cell medium-4',
 		'comment_notes_before' => __( '<p>تمامی فیلدها موردنیاز هستند، ایمیل شما منتشر نخواهد شد.</p>', 'nokhbe' ),

@@ -24,11 +24,12 @@ $categories = get_the_category();
 			<p><?php the_content(); ?></p>
 			<hr>
 			<div class="tags cell medium-12">
-				<i class="fa fa-tags"></i> <?php the_tags('برچسب ها: ', ' ') ?>
+				<i class="fa fa-tags"></i> <?php the_tags(__('برچسب ها: ', 'nokhbe'), ' ') ?>
 			</div>
 			<div class="categories cell medium-12">
-				<i class="fa fa-list-ul"></i> دسته بندی ها:
+				<i class="fa fa-list-ul"></i>
 				<?php
+                _e( 'دسته بندی ها: ', 'nokhbe' );
 				foreach ($categories as $category) {
 					?>
 					 <a href="<?= get_category_link($category->term_id)?>"> <?= $category->name ?> </a>

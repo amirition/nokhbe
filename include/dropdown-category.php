@@ -1,4 +1,5 @@
 <?php
+// The Snippet for showing the dropdown category in customizer, DO NOT mess with this code at all.
 
 include_once ABSPATH . 'wp-includes/class-wp-customize-control.php';
 

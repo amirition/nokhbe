@@ -16,7 +16,7 @@ get_header();
 			</p>
 
 			<?php get_search_form(); ?>
-			<a href="<?= get_site_url() ?>"><button class="button primary">صفحه اصلی وبسایت</button> </a>
+			<a href="<?= get_site_url() ?>"><button class="button primary"><?php _e( 'صفحه اصلی وبسایت', 'nokhbe' ); ?> </button> </a>
 		</div>
 		<aside class="cell medium-3 sidebar sidebar-left grid-y">
 			<?php

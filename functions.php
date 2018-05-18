@@ -4,9 +4,6 @@
 include 'include/customizer.php';
 include 'include/menu-walker.php';
 
-// Theme Supports
-add_theme_support( 'post-thumbnails' );
-
 //Register Styles and Scripts
 function enqueue_scripts() {
 	wp_enqueue_style( 'foundation', get_template_directory_uri() . '/css/foundation.min.css' );
@@ -29,7 +26,8 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
 //Theme Initial Setup
 function nokhbe_setup() {
-	add_theme_support( 'thumbnails', 'widgets' );
+	add_theme_support( 'post-thumbnails' );
+	load_theme_textdomain( 'nokhbe', get_template_directory() . '/languages' );
 }
 
 add_action( 'after_setup_theme', 'nokhbe_setup' );
@@ -78,8 +76,8 @@ add_action( 'admin_init', 'nk_admin' );
 // Register Top and Main menus
 function register_nk_menus() {
 	register_nav_menus( array(
-		'top-menu'  => 'منوی بالایی',
-		'main-menu' => 'منوی اصلی'
+		'top-menu'  => __('منوی بالایی', 'nokhbe'),
+		'main-menu' => __('منوی اصلی', 'nokhbe')
 	) );
 }
 

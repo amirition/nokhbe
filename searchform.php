@@ -9,9 +9,9 @@
 	</div>
 
 	<div class="input-group cell medium-12 grid-x">
-		<input type="search" id="<?php echo $unique_id; ?>" class="input-group-field" placeholder="جستجو..." value="<?php echo get_search_query(); ?>" name="s" />
+		<input type="search" id="<?php echo $unique_id; ?>" class="input-group-field" placeholder="<?php _e( 'جستجو ...', 'nokhbe' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 		<div class="input-group-button">
-			<button type="submit" class="search-submit postfix button success">جستجو</button>
+			<button type="submit" class="search-submit postfix button success"><?php _e( 'جستجو', 'nokhbe' ); ?></button>
 		</div>
 	</div>
 </form>
