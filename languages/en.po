@@ -1,0 +1,293 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Nokhbe\n"
+"POT-Creation-Date: 2018-05-18 16:33+0430\n"
+"PO-Revision-Date: 2018-05-18 16:51+0430\n"
+"Language-Team: Amirition\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Amirition <Amirition@outlook.com>\n"
+"Language: en\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:13
+msgid "خطای 404!"
+msgstr "ERROR 404! "
+
+#: 404.php:15
+msgid ""
+"به نظر میرسد در این صفحه چیزی نیست، آدرس موردنظر یا تغییر کرده است و یا پاک "
+"شده است. در هر صورت میتوانید از فیلد جستجو و دکمه های زیر استفاده کنید: "
+msgstr ""
+"It seems that there is nothing on this page, maybe the address has changed "
+"or deleted. You can search or use bottom links. "
+
+#: 404.php:19
+msgid "صفحه اصلی وبسایت"
+msgstr "Back to Main Page"
+
+#: comments.php:18
+msgid "دیدگاه شما در انتظار بررسی است."
+msgstr "Your comment is awaiting moderation. "
+
+#: comments.php:48
+msgid "نام شما"
+msgstr "Your name"
+
+#: comments.php:49
+msgid "ایمیل شما"
+msgstr "Your Email"
+
+#: comments.php:52
+msgid "دیدگاه خود را بنویسید"
+msgstr "Write your comment"
+
+#: comments.php:55
+msgid "<p>تمامی فیلدها موردنیاز هستند، ایمیل شما منتشر نخواهد شد.</p>"
+msgstr "<p>Every field is required, your email wont be published. </p>"
+
+#: comments.php:56
+msgid "دیدگاهتان را بنویسید"
+msgstr "Write your comment"
+
+#. translators: %s: post title
+#: comments.php:67
+#, php-format
+msgctxt "comments title"
+msgid "یک دیدگاه برای  &ldquo;%s&rdquo;"
+msgstr "One comment for  &ldquo;%s&rdquo;"
+
+#: comments.php:72
+#, php-format
+msgctxt "comments title"
+msgid "%1$s دیدگاه برای &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s دیدگاه برای &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s comment for &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comments for &ldquo;%2$s&rdquo;"
+
+#: comments.php:90
+msgid "پاسخ"
+msgstr "Reply"
+
+#: comments.php:98
+msgid "قبلی"
+msgstr "Prev"
+
+#: comments.php:99
+msgid "بعدی"
+msgstr "Next"
+
+#: comments.php:104
+msgid "دیدگاه ها بسته شده اند."
+msgstr "Comments are closed. "
+
+#: footer.php:13
+msgid "طراحی و کد نویسی با"
+msgstr "Coded with "
+
+#: footer.php:13
+msgid "از"
+msgstr "By"
+
+#: footer.php:13
+msgid "امیریشن"
+msgstr "Amirition"
+
+#: footer.php:15
+msgid "تمامی حقوق برای "
+msgstr "All rights reserved for "
+
+#: footer.php:15
+msgid "محفوظ است"
+msgstr " "
+
+#: functions.php:39
+msgid "سایدبار راست"
+msgstr "Left sidebar "
+
+#: functions.php:41
+msgid "سایدبار ستون سمت راست صفحه اصلی و مطالب"
+msgstr "Left sidebar in main page and single page "
+
+#: functions.php:50
+#, php-format
+msgid "ناحیه %d فوتر"
+msgstr "Footer #%d Area"
+
+#: functions.php:79
+msgid "منوی بالایی"
+msgstr "Top menu "
+
+#: functions.php:80
+msgid "منوی اصلی"
+msgstr "Main menu "
+
+#: include/customizer.php:5
+msgid " تنظیمات هدر"
+msgstr "Header settings "
+
+#: include/customizer.php:8
+msgid "آیکون های اجتماعی"
+msgstr "Social icons "
+
+#: include/customizer.php:10
+msgid ""
+"آدرس صفحه را بدون آدرس شبکه های اجتماعی وارد کنید، برای این که آیکون را حذف "
+"کنید، خانه ی مربوط به آن را خالی بگذارید."
+msgstr "Enter Social IDs, leave blank if you don't want to show the icon. "
+
+#: include/customizer.php:19
+msgid "آدرس برگه ی توییتر"
+msgstr "Twitter Address"
+
+#: include/customizer.php:28
+msgid "آدرس پیج اینستاگرام"
+msgstr "Instagram page"
+
+#: include/customizer.php:37
+msgid "آدرس صفحه ی فیسبوک"
+msgstr "Facebook page "
+
+#: include/customizer.php:46
+msgid "آدرس کانال تلگرام"
+msgstr "Telegram Channel"
+
+#: include/customizer.php:52
+msgid "مطالب ویژه"
+msgstr "Featured posts "
+
+#: include/customizer.php:54
+msgid ""
+"دسته بندی مطالبی را انتخاب کنید که میخواهید در بخش ویژه ی سایت به نمایش "
+"درآیند."
+msgstr "Choose category for featured posts section"
+
+#: include/customizer.php:62
+msgid "انتخاب دسته بندی ویژه"
+msgstr "Featured posts category "
+
+#: include/customizer.php:66
+msgid "تنظیمات سایدبار راست"
+msgstr "Left sidebar settings "
+
+#: include/customizer.php:67
+msgid "در هر بخش میتوانید دسته بندی و رنگ هدر را انتخاب کنید. "
+msgstr "You can choose category and header background color in ever section. "
+
+#: include/customizer.php:70
+msgid "بخش اول مطالب"
+msgstr "First Section "
+
+#: include/customizer.php:80 include/customizer.php:101
+#: include/customizer.php:122 include/customizer.php:151
+msgid "دسته بندی مطالب"
+msgstr "Category"
+
+#: include/customizer.php:88 include/customizer.php:109
+#: include/customizer.php:130
+msgid "رنگ پس زمینه ی عنوان"
+msgstr "Header Background "
+
+#: include/customizer.php:91
+msgid "بخش دوم مطالب"
+msgstr "Second section"
+
+#: include/customizer.php:112
+msgid "بخش سوم مطالب"
+msgstr "Third Section "
+
+#: include/customizer.php:135
+msgid "تنظیمات سایدبار چپ"
+msgstr "Right Sidebar Settings "
+
+#: include/customizer.php:136
+msgid ""
+"در این بخش میتوانید دسته بندی ها و سایر قابلیت های سایدبار چپ را تغییر دهید."
+msgstr "You can change category and ads in this panel. "
+
+#: include/customizer.php:140
+msgid "مطالب سایدبار چپ"
+msgstr "Right Sidebar Posts "
+
+#: include/customizer.php:155
+msgid "تبلیغات در سایدبار"
+msgstr "Ads in Right Sidebar "
+
+#: include/customizer.php:157
+msgid "عکس و لینک آگهی خود را در این قسمت وارد کنید. "
+msgstr "Enter the url and Image here "
+
+#: include/customizer.php:164
+msgid "لینک تبلیغات"
+msgstr "URL of ads "
+
+#: include/customizer.php:174
+msgid "انتخاب تصویر آگهی با اندازه 300x250"
+msgstr "Choose the picture (300 x 250 px)"
+
+#: search.php:16
+#, php-format
+msgid "نتایج جستجو برای: %s"
+msgstr "Search Results for %s"
+
+#: search.php:23
+msgid "نتیجه ای پیدا نشد. "
+msgstr "No Results found."
+
+#: searchform.php:12
+msgid "جستجو ..."
+msgstr "Search ..."
+
+#: searchform.php:14
+msgid "جستجو"
+msgstr "Search"
+
+#: single.php:27
+msgid "برچسب ها: "
+msgstr "Tags: "
+
+#: single.php:32
+msgid "دسته بندی ها: "
+msgstr "Categories: "
+
+#: template-parts/header-loop.php:21 template-parts/single-post.php:22
+#, php-format
+msgid "%s دیدگاه"
+msgid_plural "%s دیدگاه ها"
+msgstr[0] "%s comment"
+msgstr[1] "%s comments"
+
+#: template-parts/header-loop.php:24 template-parts/single-post.php:25
+msgid "بدون دیدگاه"
+msgstr "No comments "
+
+#: template-parts/single-post.php:29
+msgid " بیشتر بخوانید &raquo "
+msgstr "Read more &raquo"
+
+#. Theme Name of the plugin/theme
+msgid "Nokhbe"
+msgstr "Nokhbe"
+
+#. Description of the plugin/theme
+msgid "Minimal Blog and Magazine Persian Wordpress theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Amirition"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://amirition.ir"
+msgstr ""
