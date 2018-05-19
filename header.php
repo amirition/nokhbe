@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js no-svg">
+<html <?php language_attributes(); ?> class="no-js no-svg" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,18 +13,18 @@
         </a>
     </div>
     <header class="top-bar grid-x cell medium-10 medium-offset-1 top-menu">
-        <div class="top-bar-right top-menu cell medium-5 small-12">
-            <?php
-            wp_nav_menu(array(
-                'theme_container'                   =>  'top-menu',
-                'container'                         =>  false,
-                'menu_class'                        =>  'menu dropdown',
-                'items_wrap'                        =>  '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
-                'walker'                            =>  new menu_walker(),
-                'fallback_cb'                       =>  'f6_drill_menu_fallback'
-            ));
-            ?>
-        </div>
+        <nav class="top-bar-right top-menu cell medium-5 small-12 grid-x">
+	        <?php
+	        wp_nav_menu(array(
+		        'theme_container'                   =>  'top-menu',
+		        'container'                         =>  false,
+		        'menu_class'                        =>  'menu dropdown',
+		        'items_wrap'                        =>  '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
+		        'walker'                            =>  new menu_walker(),
+		        'fallback_cb'                       =>  'f6_drill_menu_fallback'
+	        ));
+	        ?>
+        </nav>
         <div class="top-bar-left cell medium-7">
             <ul class="menu horizontal text-left">
                 <?php if (get_theme_mod('telegram')) {

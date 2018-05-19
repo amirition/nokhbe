@@ -18,7 +18,7 @@ if ($featured_posts->have_posts()) {
                         <?php
                         $comments = get_comments_number();
                         if($comments > 0) {
-	                        echo sprintf( _n('%s دیدگاه', '%s دیدگاه ها', $comments, 'nokhbe'), $comments );
+	                        echo sprintf( _n('%s دیدگاه', '%s دیدگاه', $comments, 'nokhbe'), $comments );
                         }
                         else {
                             _e( 'بدون دیدگاه', 'nokhbe' );

@@ -1,0 +1,82 @@
+/*
+Rtl style
+Do not Change this file directly, use custom.css file for editing the theme.
+*/
+
+/* Registering Fonts */
+@font-face {
+    font-family: "samim";
+    src: url('assets/fonts/Samim-FD.eot'), url('assets/fonts/Samim-FD.ttf'), url('assets/fonts/Samim-FD.woff');
+}
+
+@font-face {
+    font-family: "samim-bold";
+    src: url('assets/fonts/Samim-Bold-FD.eot'), url('assets/fonts/Samim-Bold-FD.ttf'), url('assets/fonts/Samim-Bold-FD.woff');
+}
+p, li, a, button, input, span, div {
+    font-family: "samim";
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "samim-bold";
+}
+
+/* Header */
+.site-title h1 {
+    font-family: "samim-bold", sans-serif;
+}
+.features h1 {
+    font-family: "samim", sans-serif;
+}
+.feature-meta span i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+/* Sidebar */
+.sidebar-right .menu a {
+    left: auto;
+    right: 0;
+}
+.sidebar-category .menu a:hover {
+    right: 10px;
+    left: auto;
+}
+.sidebar-category .menu li a::before {
+    margin-left: 5px;
+    margin-right: 0;
+    content: "\f104";
+}
+
+/* Index Articles */
+
+/* Footer */
+
+/* Single Post */
+.single-post .wp-caption img {
+    border-radius: 5px 5px 0 0;
+}
+.comment-form p {
+    margin-right: 1rem;
+}
+.comment-header h6 {
+    text-align: right;
+}
+.comment {
+    padding: 1rem 0 0;
+    margin-right: .2rem;
+}
+.comments ul {
+    margin-right: 0;
+}
+.single-post .tags, .copyright p, .single-post .categories, .reply a,
+.comment-form .button, .comment-form .button:hover, .comment-form .button:focus,
+.not-found .button, .not-found .button:hover, .not-found .button:focus, button.search-submit.success,
+button.search-submit.success:hover {
+    font-weight: bold;
+}
+/* Responsive */
+@media screen and (max-width: 650px) {
+    .features, footer.grid-margin-x {
+        margin-right: 0;
+    }
+}

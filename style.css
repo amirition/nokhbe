@@ -8,20 +8,9 @@
  Domain Path: /languages
 */
 
-/* Registering Fonts */
-@font-face {
-    font-family: "samim";
-    src: url('fonts/Samim-FD.eot'), url('fonts/Samim-FD.ttf'), url('fonts/Samim-FD.woff');
-}
-
-@font-face {
-    font-family: "samim-bold";
-    src: url('fonts/Samim-Bold-FD.eot'), url('fonts/Samim-Bold-FD.ttf'), url('fonts/Samim-Bold-FD.woff');
-}
-
 /* General Styling */
 p, li, a, button, input, span, div {
-    font-family: "samim";
+    font-family: 'Open Sans', sans-serif;
     color: #757575;
 }
 
@@ -30,7 +19,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "samim-bold";
+    font-family: "Lato", sans-serif;
     color: #616161;
 }
 
@@ -63,7 +52,7 @@ button.button.primary:hover {
     text-align: center;
     color: #626262;
     font-size: 30px;
-    font-family: "samim-bold";
+    font-family: "Lato", sans-serif;
 }
 
 .top-bar-left i {
@@ -116,17 +105,11 @@ button.button.primary:hover {
     -o-transition: all .3s;
     transition: all .3s;
     width: 100%;
-    /* IE10+ */
     background-image: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .85) 100%);
-    /* Mozilla Firefox */
     background-image: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .85) 100%);
-    /* Opera */
     background-image: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .85) 100%);
-    /* Webkit (Safari/Chrome 10) */
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(100, rgba(0, 0, 0, .85)));
-    /* Webkit (Chrome 11+) */
     background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, .85) 100%);
-    /* W3C Markup */
     background-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, .85) 100%);
 }
 
@@ -134,7 +117,7 @@ button.button.primary:hover {
     color: #fff;
     font-size: 17px;
     margin-bottom: 5px;
-    font-family: "samim";
+    font-family: "Lato", sans-serif;
 }
 
 .features .header-article:hover a {
@@ -153,7 +136,7 @@ button.button.primary:hover {
 }
 
 .feature-meta span i {
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .secondary-menu {
@@ -250,7 +233,7 @@ aside .menu.vertical, footer .menu.vertical {
     padding-right: 0;
     position: relative;
     font-size: 14px;
-    right: 0;
+    left: 0;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     -ms-transition: all .3s;
@@ -258,15 +241,15 @@ aside .menu.vertical, footer .menu.vertical {
     transition: all .3s;
 }
 
-.sidebar-right .menu a:hover {
-    right: 10px;
+.sidebar-category .menu a:hover {
+    left: 10px;
 }
 
-.sidebar-right .menu li a::before {
-    content: "\f104"; /* FontAwesome Unicode */
+.sidebar-category .menu li a::before {
+    content: "\f105"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .sidebar-category {
@@ -354,7 +337,6 @@ footer {
 }
 
 .copyright p {
-    font-weight: bold;
     margin: 0;
     font-size: 14px;
 }
@@ -390,11 +372,11 @@ footer h2 {
 }
 .single-post .wp-caption {
     border-radius: 7px;
-    BACKGROUND: #f1f1f1;
+    background: #f1f1f1;
     margin-bottom: 1rem;
 }
 .single-post .wp-caption img {
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 0px 0 5px;
     width: 100%;
 }
 .single-post .wp-caption-text {
@@ -419,7 +401,6 @@ footer h2 {
     color: #2E86AB;
 }
 .single-post .tags {
-    font-weight: bold;
     font-size: 14px;
 }
 .single-post .tags a {
@@ -435,7 +416,6 @@ footer h2 {
 .single-post .categories {
     margin: 2rem 0;
     font-size: 14px;
-    font-weight: bold;
 }
 .single-post .categories a {
     -webkit-border-radius: 4px;
@@ -455,26 +435,27 @@ footer h2 {
 .not-found .button, .not-found .button:hover, .not-found .button:focus, button.search-submit.success,
 button.search-submit.success:hover {
     color: #f1f1f1;
-    font-weight: bold;
 }
 .comment-form p {
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 .comment {
     padding: 1rem 0 0;
-    margin-right: .2rem;
+    margin-left: .2rem;
 }
 .comment p {
     margin-bottom: 0;
     font-size: 13px;
 }
+.comment-header h6 {
+    text-align: left;
+}
 .reply a {
     color: #2E86AB;
-    font-weight: bold;
     font-size: 14px;
 }
 .comments ul {
-    margin-right: 0;
+    margin-left: 0;
 }
 #comments > .children {
     width: 100%;
@@ -545,7 +526,7 @@ button.search-submit.success:hover {
 /* Responsive */
 @media screen and (max-width: 650px) {
     .features, footer.grid-margin-x {
-        margin-right: 0;
+        margin-left: 0;
     }
     .copyright p, .copyright div {
         text-align: center;
