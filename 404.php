@@ -10,13 +10,13 @@ get_header();
 			?>
 		</aside>
 		<div class="cell medium-6 not-found">
-			<h2><?= __('خطای 404!', 'nokhbe'); ?></h2>
+			<h2><?php echo __('خطای 404!', 'nokhbe'); ?></h2>
 			<p>
-				<?= __('به نظر میرسد در این صفحه چیزی نیست، آدرس موردنظر یا تغییر کرده است و یا پاک شده است. در هر صورت میتوانید از فیلد جستجو و دکمه های زیر استفاده کنید: ', 'nokhbe') ; ?>
+				<?php echo __('به نظر میرسد در این صفحه چیزی نیست، آدرس موردنظر یا تغییر کرده است و یا پاک شده است. در هر صورت میتوانید از فیلد جستجو و دکمه های زیر استفاده کنید: ', 'nokhbe') ; ?>
 			</p>
 
 			<?php get_search_form(); ?>
-			<a href="<?= get_site_url() ?>"><button class="button primary"><?php _e( 'صفحه اصلی وبسایت', 'nokhbe' ); ?> </button> </a>
+			<a href="<?php echo get_site_url() ?>"><button class="button primary"><?php _e( 'صفحه اصلی وبسایت', 'nokhbe' ); ?> </button> </a>
 		</div>
 		<aside class="cell medium-3 sidebar sidebar-left grid-y">
 			<?php

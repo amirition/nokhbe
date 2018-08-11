@@ -1,11 +1,15 @@
 /*
  Theme Name: Nokhbe
- Description: Minimal Blog and Magazine Persian Wordpress theme
+ Description: Minimal Blog and Magazine Wordpress theme
  Author: Amirition
  Author URI: http://amirition.ir
  Text Domain: nokhbe
+ Theme URI: http://wpdemos.ir/nokhbe-en/
  Version: 1.1
  Domain Path: /languages
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: featured-images, footer-widgets, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, news
+ Theme URI: http://wpzone.ir/nokhbe/
 */
 
 /* General Styling */
@@ -13,17 +17,62 @@ p, li, a, button, input, span, div {
     font-family: 'Open Sans', sans-serif;
     color: #757575;
 }
-
-a:hover {
-    color: inherit;
+.single-post h1, .single-page h1 {
+    font-size: 25px;
+    display: block;
 }
 
+.single-post h2, .single-page h2, .archive-page h2 {
+    font-size: 22px;
+    display: block;
+}
+
+.single-post h3, .single-page h3 {
+    font-size: 19px;
+}
+
+.single-post h4, .single-page h4 {
+    font-size: 17px;
+    display: block;
+}
+
+.single-post h5, .single-page h5 {
+    font-size: 15px;
+}
+
+.single-post h6, .single-page h6 {
+    font-size: 13px;
+    display: block;
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+a:hover, .bypostauthor {
+    color: inherit;
+}
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: "Lato", sans-serif;
     color: #616161;
 }
 
-.center {
+.center, .aligncenter {
     justify-content: center;
 }
 
@@ -31,10 +80,12 @@ body {
     background: #fafafa;
 }
 
-.text-left {
+.text-left, .alignleft {
     justify-content: flex-end;
 }
-
+.alignright {
+    justify-content: flex-start;
+}
 button.button {
     margin-bottom: 0;
 }
@@ -138,7 +189,6 @@ button.button.primary:hover {
 .feature-meta span i {
     margin-right: 5px;
 }
-
 .secondary-menu {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -260,7 +310,9 @@ aside .menu.vertical, footer .menu.vertical {
 .main-content img {
     border-radius: 4px;
 }
-
+.main-content {
+    align-items: flex-start;
+}
 .index-main-article {
     margin-left: 0;
     margin-right: 0;
@@ -313,7 +365,7 @@ aside .menu.vertical, footer .menu.vertical {
     text-align: center;
 }
 
-.pagination .current {
+.pagination .current, .comments-pagination .current {
     background: #2E86AB;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -370,7 +422,7 @@ footer h2 {
 .single-post {
     padding: 0 1.5rem;
 }
-.single-post .wp-caption {
+.single-post .wp-caption, .gallery-caption {
     border-radius: 7px;
     background: #f1f1f1;
     margin-bottom: 1rem;
@@ -387,15 +439,13 @@ footer h2 {
 .single-post .featured-image {
     margin-bottom: 1rem;
 }
-.single-post h2 {
-    font-size: 21px;
-}
 .single-post p, .single-post li, .single-post a {
     font-size: 15px;
     line-height: 2;
 }
 .single-meta {
     margin: 1rem 0;
+    align-items: center;
 }
 .single-meta div {
     color: #2E86AB;
@@ -427,7 +477,8 @@ footer h2 {
     font-size: 14px;
     color: #f1f1f1;
 }
-.telegram-share span, .telegram-share a, .telegram-share a:hover, .telegram-share:visited, .telegram-share:focus {
+.telegram-share span, .telegram-share a, .telegram-share a:hover, .telegram-share:visited, .telegram-share:focus,
+.facebook-share span, .facebook-share a, .facebook-share a:hover, .facebook-share:visited, .facebook-share:focus {
     color: #0088cc;
     font-size: 16px;
 }
@@ -450,9 +501,15 @@ button.search-submit.success:hover {
 .comment-header h6 {
     text-align: left;
 }
+.comment-header p {
+    text-align: right;
+}
 .reply a {
     color: #2E86AB;
     font-size: 14px;
+}
+.reply {
+    text-align: right;
 }
 .comments ul {
     margin-left: 0;
@@ -472,37 +529,22 @@ button.search-submit.success:hover {
 #comments > .children > .children > .children > .children > .comment {
     border-color: #26a65b;
 }
+.comments-pagination {
+    width: 100%;
+    text-align: center;
+}
+.comments-pagination .nav-links a {
+    margin: 0 3px;
+    padding: 3px 5px;
+}
+.comments-pagination .nav-links > span {
+    color: #f1f1f1;
+    padding: 5px;
+}
 .comment-respond textarea, .comment-respond input {
     font-size: 14px;
     line-height: 2;
     color: #626262;
-}
-.single-post h1, .single-page h1 {
-    font-size: 25px;
-    display: block;
-}
-
-.single-post h2, .single-page h2, .archive-page h2 {
-    font-size: 22px;
-    display: block;
-}
-
-.single-post h3, .single-page h3 {
-    font-size: 19px;
-}
-
-.single-post h4, .single-page h4 {
-    font-size: 17px;
-    display: block;
-}
-
-.single-post h5, .single-page h5 {
-    font-size: 15px;
-}
-
-.single-post h6, .single-page h6 {
-    font-size: 13px;
-    display: block;
 }
 
 /* Archive page */
@@ -530,5 +572,18 @@ button.search-submit.success:hover {
     }
     .copyright p, .copyright div {
         text-align: center;
+    }
+    .single-meta div, .single-meta a, .single-meta a:hover {
+        font-size: 14px;
+        text-align: center;
+    }
+    .comment-header p {
+        display: none;
+    }
+    .top-bar-left .menu {
+        justify-content: center;
+    }
+    .form-submit {
+        width: 100%;
     }
 }

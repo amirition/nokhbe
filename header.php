@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js no-svg" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>">
+<html lang="<?php echo get_locale(); ?> " <?php language_attributes(); ?> class="no-js no-svg" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= get_bloginfo('name') . ' | ' . get_bloginfo('description') ?> </title>
-	<?php wp_head(); ?>
+    <title><?php wp_title('|', true, 'right'); ?></title>
+    <?php wp_head(); ?>
 </head>
-<body class="grid-x">
+<body <?php body_class('grid-x'); ?>>
     <div class="site-title grid-x cell medium-10 medium-offset-1 center">
-        <a href="<?= get_bloginfo('url'); ?>">
-            <h1><?= get_bloginfo( 'name' ); ?> </h1>
+        <a href="<?php echo esc_url( home_url() ); ?>">
+            <h1><?php echo get_bloginfo( 'name' ); ?> </h1>
         </a>
     </div>
     <header class="top-bar grid-x cell medium-10 medium-offset-1 top-menu">
-        <nav class="top-bar-right top-menu cell medium-5 small-12 grid-x">
+        <nav class="top-bar-left top-menu cell medium-5 small-12 grid-x">
 	        <?php
 	        wp_nav_menu(array(
 		        'theme_container'                   =>  'top-menu',
@@ -25,25 +25,9 @@
 	        ));
 	        ?>
         </nav>
-        <div class="top-bar-left cell medium-7">
-            <ul class="menu horizontal text-left">
-                <?php if (get_theme_mod('telegram')) {
-                    ?>
-                    <li><a href="<?= "http://telegram.me/" . get_theme_mod('telegram')?>"><i class="fa fa-telegram"></i> </a> </li>
-                <?php } if (get_theme_mod('instagram')) {
-                    ?>
-                    <li><a href="<?= "http://instagram.com/" . get_theme_mod("instagram") ?>"><i class="fa fa-instagram"></i> </a> </li>
-                <?php } if (get_theme_mod('twitter')) {
-                    ?>
-                    <li><a href="<?= "http://twitter.com/" . get_theme_mod("twitter") ?>"><i class="fa fa-twitter"></i> </a> </li>
-                <?php } if (get_theme_mod('facebook')) {
-                    ?>
-                <li><a href="<?= "http://facebook.com/" . get_theme_mod("facebook") ?>"><i class="fa fa-facebook"></i> </a> </li>
-                <?php } ?>
-            </ul>
-        </div>
+
     </header>
-    <?php if (get_theme_mod('featured_cat')) {
+    <?php if (get_theme_mod('nk_featured_cat')) {
         ?>
         <div class="grid-x grid-margin-x cell medium-10 medium-offset-1 small-12 features">
             <?php get_template_part('template-parts/header-loop'); ?>

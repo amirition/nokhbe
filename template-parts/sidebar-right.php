@@ -1,31 +1,35 @@
 <?php
-$first_posts = new WP_Query( array(
-	'cat'            => get_theme_mod( 'rsidebar1_cat' ),
+/*
+ * Show 3 sections, in each of these section user selected a category in the customizer and
+ * also a background color for the title.
+ */
+$nk_first_posts = new WP_Query( array(
+	'cat'            => get_theme_mod( 'nk_rsidebar1_cat' ),
 	'posts_per_page' => 5
 ) );
 
-$second_posts = new WP_Query( array(
-	'cat'            => get_theme_mod( 'rsidebar2_cat' ),
+$nk_second_posts = new WP_Query( array(
+	'cat'            => get_theme_mod( 'nk_rsidebar2_cat' ),
 	'posts_per_page' => 5
 ) );
 
-$third_posts = new WP_Query( array(
-	'cat'            => get_theme_mod( 'rsidebar3_cat' ),
+$nk_third_posts = new WP_Query( array(
+	'cat'            => get_theme_mod( 'nk_rsidebar3_cat' ),
 	'posts_per_page' => 5
 ) );
 
-if ( get_theme_mod( 'rsidebar1_cat' ) ) {
+if ( get_theme_mod( 'nk_rsidebar1_cat' ) ) {
 	?>
     <div class="sidebar-category grid-x">
 
-        <h2 class="cell small-12"><?= get_cat_name( intval( get_theme_mod( 'rsidebar1_cat' ) ) ); ?> </h2>
+        <h2 class="cell small-12"><?php echo get_cat_name( intval( get_theme_mod( 'nk_rsidebar1_cat' ) ) ); ?> </h2>
         <ul class="menu vertical">
 			<?php
-			if ( $first_posts->have_posts() ) {
-				while ( $first_posts->have_posts() ) {
-					$first_posts->the_post();
+			if ( $nk_first_posts->have_posts() ) {
+				while ( $nk_first_posts->have_posts() ) {
+					$nk_first_posts->the_post();
 					?>
-                    <li><a href="<?php the_permalink() ?>"><?= the_title() ?></a></li>
+                    <li><a href="<?php the_permalink() ?>"><?php echo the_title() ?></a></li>
 					<?php
 				}
 			} else {
@@ -38,17 +42,17 @@ if ( get_theme_mod( 'rsidebar1_cat' ) ) {
 	<?php
 }
 
-if ( get_theme_mod( 'rsidebar2_cat' ) ) {
+if ( get_theme_mod( 'nk_rsidebar2_cat' ) ) {
 	?>
     <div class="sidebar-category grid-x">
-        <h2 class="cell small-12"><?= get_cat_name( intval( get_theme_mod( 'rsidebar2_cat' ) ) ) ?></h2>
+        <h2 class="cell small-12"><?php echo get_cat_name( intval( get_theme_mod( 'nk_rsidebar2_cat' ) ) ) ?></h2>
         <ul class="menu vertical">
 			<?php
-			if ( $second_posts->have_posts() ) {
-				while ( $second_posts->have_posts() ) {
-					$second_posts->the_post();
+			if ( $nk_second_posts->have_posts() ) {
+				while ( $nk_second_posts->have_posts() ) {
+					$nk_second_posts->the_post();
 					?>
-                    <li><a href="<?php the_permalink() ?>"><?= the_title() ?></a></li>
+                    <li><a href="<?php the_permalink() ?>"><?php echo the_title() ?></a></li>
 					<?php
 				}
 			} else {
@@ -63,14 +67,14 @@ if ( get_theme_mod( 'rsidebar2_cat' ) ) {
 if ( get_theme_mod( 'rsidebar3_cat' ) ) {
 	?>
     <div class="sidebar-category grid-x">
-        <h2 class="cell small-12"><?= get_cat_name( intval( get_theme_mod( 'rsidebar3_cat' ) ) ) ?></h2>
+        <h2 class="cell small-12"><?php echo get_cat_name( intval( get_theme_mod( 'nk_rsidebar3_cat' ) ) ) ?></h2>
         <ul class="menu vertical">
 			<?php
-			if ( $third_posts->have_posts() ) {
-				while ( $third_posts->have_posts() ) {
-					$third_posts->the_post();
+			if ( $nk_third_posts->have_posts() ) {
+				while ( $nk_third_posts->have_posts() ) {
+					$nk_third_posts->the_post();
 					?>
-                    <li><a href="<?php the_permalink() ?>"><?= the_title() ?></a></li>
+                    <li><a href="<?php the_permalink() ?>"><?php echo the_title() ?></a></li>
 					<?php
 				}
 			}

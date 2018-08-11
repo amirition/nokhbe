@@ -3,19 +3,19 @@ function nk_comment_template($comment, $args, $depth) {
     ?>
     <div class="comment card cell medium-12 grid-x grid-margin-x">
         <div class="cell small-2">
-            <img src="<?= get_avatar_url(get_the_author_meta('ID')); ?>">
+            <img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>">
         </div>
         <div class="cell small-10 grid-x">
             <div class="comment-header cell small-12 grid-x">
-                <h6 class="cell small-3 text-right"><?php comment_author(); ?></h6>
-                <p class="cell small-5 small-offset-4 text-left"> <?= get_comment_date() . ' - ' . get_comment_time() ?></p>
+                <h6 class="cell small-6 text-right"><?php comment_author(); ?></h6>
+                <p class="cell small-6"> <?php echo get_comment_date() . ' - ' . get_comment_time() ?></p>
             </div>
             <p class="cell small-12"><?php comment_text($comment); ?></p>
             <div class="comment-footer cell small-12 grid-x">
                 <div class="cell small-10">
                     <?php
                     if ( $comment->comment_approved == '0' ) { ?>
-                    <em class="comment-awaiting-moderation"><?php __( 'دیدگاه شما در انتظار بررسی است.', 'nokhbe' ); ?></em><?php
+                    <em class="comment-awaiting-moderation"><?php _e( 'دیدگاه شما در انتظار بررسی است.', 'nokhbe' ); ?></em><?php
                     } ?>
                 </div>
                 <div class="cell small-2 reply text-left">
@@ -89,14 +89,14 @@ if ( post_password_required() ) {
 			'short_ping'    =>  true,
 			'reply_text'    =>  __( 'پاسخ', 'nokhbe' ),
             'max_depth'     =>  5,
-            'per_page'      =>  10,
             'callback'      =>  'nk_comment_template'
 		) );
 		?>
 
 		<?php the_comments_pagination( array(
-			'prev_text' => '<span class="screen-reader-text">' . __( 'قبلی', 'nokhbe' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . __( 'بعدی', 'nokhbe' ) . '</span>',
+            'screen_reader_text'    =>  ' ',
+			'prev_text'             => '<span class="screen-reader-text">' . __( 'قبلی', 'nokhbe' ) . '</span>',
+			'next_text'             => '<span class="screen-reader-text">' . __( 'بعدی', 'nokhbe' ) . '</span>',
 		) );
 	endif; // Check for have_comments().
 	// If comments are closed and there are comments, let's leave a little note, shall we?

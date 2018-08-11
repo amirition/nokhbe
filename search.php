@@ -12,7 +12,7 @@ get_header();
         </aside>
         <div class="cell medium-6 index-posts archive-page">
             <h2 class="cell medium-12 archive-title"><?php
-				$category = get_the_category();
+				$nk_category = get_the_category();
 				printf( __( 'نتایج جستجو برای: %s', 'nokhbe' ), get_search_query() );
 				?>
             </h2>
@@ -20,7 +20,7 @@ get_header();
 				get_template_part( 'template-parts/single-post' );
 			} else {
 				?>
-                <p class="alert text-center"> <?= __( 'نتیجه ای پیدا نشد. ', 'nokhbe' ) ?></p>
+                <p class="alert text-center"> <?php echo __( 'نتیجه ای پیدا نشد. ', 'nokhbe' ) ?></p>
 				<?php
 			}
 			?>

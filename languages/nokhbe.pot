@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Nokhbe\n"
-"POT-Creation-Date: 2018-05-18 16:33+0430\n"
+"POT-Creation-Date: 2018-05-20 20:59+0430\n"
 "PO-Revision-Date: 2018-05-18 16:31+0430\n"
 "Last-Translator: \n"
 "Language-Team: Amirition\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -110,24 +110,24 @@ msgstr ""
 msgid "محفوظ است"
 msgstr ""
 
-#: functions.php:39
+#: functions.php:51
 msgid "سایدبار راست"
 msgstr ""
 
-#: functions.php:41
+#: functions.php:53
 msgid "سایدبار ستون سمت راست صفحه اصلی و مطالب"
 msgstr ""
 
-#: functions.php:50
+#: functions.php:62
 #, php-format
 msgid "ناحیه %d فوتر"
 msgstr ""
 
-#: functions.php:79
+#: functions.php:91
 msgid "منوی بالایی"
 msgstr ""
 
-#: functions.php:80
+#: functions.php:92
 msgid "منوی اصلی"
 msgstr ""
 
@@ -259,10 +259,14 @@ msgstr ""
 msgid "دسته بندی ها: "
 msgstr ""
 
+#: single.php:40
+msgid "برگه ها:"
+msgstr ""
+
 #: template-parts/header-loop.php:21 template-parts/single-post.php:22
 #, php-format
 msgid "%s دیدگاه"
-msgid_plural "%s دیدگاه ها"
+msgid_plural "%s دیدگاه"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -276,6 +280,10 @@ msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "Nokhbe"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wpzone.ir/nokhbe/"
 msgstr ""
 
 #. Description of the plugin/theme

@@ -68,6 +68,12 @@ h1, h2, h3, h4, h5, h6 {
 .comments ul {
     margin-right: 0;
 }
+.reply {
+    text-align: left;
+}
+.comment-header p {
+    text-align: left;
+}
 .single-post .tags, .copyright p, .single-post .categories, .reply a,
 .comment-form .button, .comment-form .button:hover, .comment-form .button:focus,
 .not-found .button, .not-found .button:hover, .not-found .button:focus, button.search-submit.success,

@@ -11,11 +11,20 @@ get_header();
         <div class="cell medium-6 index-posts">
 			<?php
 			get_template_part( 'template-parts/single-post' );
-			the_posts_pagination( array(
-				'prev_text'          => '<i class="fa fa-angle-right"> </i>',
-				'next_text'          => '<i class="fa fa-angle-left"> </i>',
-				'screen_reader_text' => ' '
-			) );
+			if(is_rtl()) {
+			    the_posts_pagination( array(
+					'prev_text'          => '<i class="fa fa-angle-right"> </i>',
+					'next_text'          => '<i class="fa fa-angle-left"> </i>',
+					'screen_reader_text' => ' '
+				) );
+			}
+			else {
+				the_posts_pagination( array(
+					'prev_text'          => '<i class="fa fa-angle-left"> </i>',
+					'next_text'          => '<i class="fa fa-angle-right"> </i>',
+					'screen_reader_text' => ' '
+				) );
+            }
 			?>
         </div>
         <aside class="cell medium-3 sidebar sidebar-left grid-y">
