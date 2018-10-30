@@ -1,5 +1,5 @@
 <?php
-function nk_comment_template($comment, $args, $depth) {
+function nokhbe_comment_template($comment, $args, $depth) {
     ?>
     <div class="comment card cell medium-12 grid-x grid-margin-x">
         <div class="cell small-2">
@@ -45,11 +45,11 @@ if ( post_password_required() ) {
 	<?php
 	$comments_arg = ( array(
 		'fields'               => array(
-			'author' => '<input class="cell medium-6" type="text" name="author" placeholder="' . __( 'نام شما', 'nokhbe' ) . '" required>',
-			'email'  => '<input class="cell medium-6" type="email" name="email" placeholder="'. __('ایمیل شما', 'nokhbe') . '" required>',
+			'author' => '<input class="cell medium-6" type="text" name="author" placeholder="' . esc_attr(__( 'نام شما', 'nokhbe' )) . '" required>',
+			'email'  => '<input class="cell medium-6" type="email" name="email" placeholder="'. esc_attr(__('ایمیل شما', 'nokhbe')) . '" required>',
 			'url'    => ' '
 		),
-		'comment_field'        => '<textarea placeholder="'. __('دیدگاه خود را بنویسید', 'nokhbe') .'" name="comment" class="cell medium-12" id="comment" rows="5" required> </textarea>',
+		'comment_field'        => '<textarea placeholder="'. esc_attr(__('دیدگاه خود را بنویسید', 'nokhbe')) .'" name="comment" class="cell medium-12" id="comment" rows="5" required> </textarea>',
 		'class_form'           => 'comment-form grid-x grid-margin-x',
 		'class_submit'         => 'button primary cell medium-4',
 		'comment_notes_before' => __( '<p>تمامی فیلدها موردنیاز هستند، ایمیل شما منتشر نخواهد شد.</p>', 'nokhbe' ),
@@ -89,7 +89,7 @@ if ( post_password_required() ) {
 			'short_ping'    =>  true,
 			'reply_text'    =>  __( 'پاسخ', 'nokhbe' ),
             'max_depth'     =>  5,
-            'callback'      =>  'nk_comment_template'
+            'callback'      =>  'nokhbe_comment_template'
 		) );
 		?>
 

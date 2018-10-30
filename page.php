@@ -9,11 +9,11 @@ get_header();
 			?>
         </aside>
         <div class="cell medium-9 single-post single-page grid-y">
-            <h2 class="cell"><?php echo the_title(); ?></h2>
+            <h2 class="cell"><?php the_title(); ?></h2>
 	        <?php if ( has_post_thumbnail() ) {
 		        ?>
                 <div class="cell medium-12">
-                    <img src="<?php echo get_the_post_thumbnail_url() ?>">
+                    <img src="<?php echo esc_url(get_the_post_thumbnail_url()) ?>">
                 </div>
 	        <?php } ?>
             <p class="cell"><?php the_content(); ?></p>

@@ -3,7 +3,7 @@
 
 include_once ABSPATH . 'wp-includes/class-wp-customize-control.php';
 
-class Category_Control extends WP_Customize_Control
+class nokhbe_Category_Control extends WP_Customize_Control
 {
     public $type = 'dropdown-category';
     protected $dropdown_args = false;

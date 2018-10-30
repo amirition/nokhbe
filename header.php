@@ -3,7 +3,6 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('grid-x'); ?>>
@@ -17,17 +16,18 @@
 	        <?php
 	        wp_nav_menu(array(
 		        'theme_container'                   =>  'top-menu',
+		        'theme_location'                    =>  'top-menu',
 		        'container'                         =>  false,
 		        'menu_class'                        =>  'menu dropdown',
 		        'items_wrap'                        =>  '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
-		        'walker'                            =>  new menu_walker(),
-		        'fallback_cb'                       =>  'f6_drill_menu_fallback'
+		        'walker'                            =>  new nokhbe_menu_walker(),
+		        'fallback_cb'                       =>  'nokhbe_f6_drill_menu_fallback'
 	        ));
 	        ?>
         </nav>
 
     </header>
-    <?php if (get_theme_mod('nk_featured_cat')) {
+    <?php if (get_theme_mod('nokhbe_featured_cat')) {
         ?>
         <div class="grid-x grid-margin-x cell medium-10 medium-offset-1 small-12 features">
             <?php get_template_part('template-parts/header-loop'); ?>
@@ -36,12 +36,13 @@
 <nav class="top-bar grid-x cell medium-10 medium-offset-1 small-12 secondary-menu">
 	<?php
 	wp_nav_menu(array(
-		'theme_container'                   =>  'top-menu',
+		'theme_container'                   =>  'main-menu',
+        'theme_location'                    =>  'main-menu',
 		'container'                         =>  false,
 		'menu_class'                        =>  'menu dropdown',
 		'items_wrap'                        =>  '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
-		'walker'                            =>  new menu_walker(),
-		'fallback_cb'                       =>  'f6_drill_menu_fallback'
+		'walker'                            =>  new nokhbe_menu_walker(),
+		'fallback_cb'                       =>  'nokhbe_f6_drill_menu_fallback'
 	));
 	?>
 </nav>

@@ -12,7 +12,7 @@ get_header();
         </aside>
         <div class="cell medium-6 index-posts archive-page">
             <h2 class="cell medium-12 archive-title"><?php
-				$nk_category = get_the_category();
+				$nokhbe_category = get_the_category();
 				printf( __( 'نتایج جستجو برای: %s', 'nokhbe' ), get_search_query() );
 				?>
             </h2>

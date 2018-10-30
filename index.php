@@ -30,7 +30,6 @@ get_header();
         <aside class="cell medium-3 sidebar sidebar-left grid-y">
 			<?php
 			get_template_part( 'template-parts/sidebar-left' );
-			get_template_part( 'template-parts/sidebar-ads' );
 			?>
 
         </aside>

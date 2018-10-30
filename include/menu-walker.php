@@ -1,5 +1,5 @@
 <?php
-class menu_walker extends Walker_Nav_Menu
+class nokhbe_menu_walker extends Walker_Nav_Menu
 {
 	/*
 	 * Add vertical menu class
@@ -10,7 +10,7 @@ class menu_walker extends Walker_Nav_Menu
 		$output .= "\n$indent<ul class=\"vertical menu\" data-submenu>\n";
 	}
 }
-function f6_drill_menu_fallback($args)
+function nokhbe_f6_drill_menu_fallback($args)
 {
 	/*
 	 * Instantiate new Page Walker class instead of applying a filter to the
