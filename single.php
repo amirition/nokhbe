@@ -24,27 +24,36 @@ get_header();
                 </div>
                 <p><?php the_content(); ?></p>
                 <hr>
-                <div class="tags cell medium-12">
-                    <i class="fa fa-tags"></i> <?php the_tags(__('برچسب ها: ', 'nokhbe'), ' ') ?>
-                </div>
-                <div class="categories cell medium-12">
-                    <i class="fa fa-list-ul"></i>
+                <?php if ( has_tag() ) {
+                    ?>
+                    <div class="tags cell medium-12">
+                        <i class="fa fa-tags"></i> <?php the_tags(__('برچسب ها: ', 'nokhbe'), ' ') ?>
+                    </div>
                     <?php
-                    _e('دسته بندی ها: ', 'nokhbe');
-                    foreach ($nokhbe_categories as $category) {
-                        ?>
-                        <a href="<?php echo get_category_link($category->term_id) ?>"> <?php echo $category->name ?> </a>
+                }
+                if ( has_category() ) {
+                    ?>
+                    <div class="categories cell medium-12">
+                        <i class="fa fa-list-ul"></i>
                         <?php
-                    }
-                    ?>
-                    <?php wp_link_pages(array(
-                        'before' => '<div class="page-links"><span class="page-links-title">' . __('برگه ها:', 'nokhbe') . '</span>',
-                        'after' => '</div>',
-                        'link_before' => '<span>',
-                        'link_after' => '</span>',
-                    ));
-                    ?>
-                </div>
+                        _e('دسته بندی ها: ', 'nokhbe');
+                        foreach ($nokhbe_categories as $category) {
+                            ?>
+                            <a href="<?php echo get_category_link($category->term_id) ?>"> <?php echo $category->name ?> </a>
+                            <?php
+                        }
+                        ?>
+                        <?php wp_link_pages(array(
+                            'before' => '<div class="page-links"><span class="page-links-title">' . __('برگه ها:', 'nokhbe') . '</span>',
+                            'after' => '</div>',
+                            'link_before' => '<span>',
+                            'link_after' => '</span>',
+                        ));
+                        ?>
+                    </div>
+                    <?php
+                }
+                ?>
                 <hr>
                 <?php
                 if (comments_open()) :
