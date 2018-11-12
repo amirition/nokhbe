@@ -326,16 +326,16 @@ aside .menu.vertical, footer .menu.vertical {
     line-height: 2;
 }
 
-.index-meta span {
-    color: #002400;
+.index-meta a {
+    color: #757575;
+    font-size: 13px;
 }
 
-.index-meta span:nth-child(2) {
+.index-meta a:nth-child(2) {
     color: #E3170A;
 }
 
-.index-meta a {
-    font-size: 14px;
+.index-meta a:last-child {
     color: #2E86AB;
 }
 
@@ -448,6 +448,10 @@ footer h2 {
 }
 .single-meta div {
     color: #2E86AB;
+    font-size: 15px;
+}
+.single-meta div a:hover {
+    color: #757575;
 }
 .single-post .tags {
     font-size: 14px;

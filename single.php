@@ -16,7 +16,8 @@ get_header();
             <div id="post-<?php the_ID(); ?>" <?php post_class('cell medium-6 single-post grid-x'); ?>>
                 <h2><?php the_title(); ?></h2>
                 <div class="single-meta grid-x cell medium-12">
-                    <div class="cell small-4"><i class="fa fa-user"></i> <?php the_author() ?></div>
+                    <div class="cell small-4"><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ),
+                            get_the_author_meta( 'user_nicename' ) ) );   ?> "><i class="fa fa-user"></i> <?php the_author() ?> </a></div>
                     <div class="cell small-4"><i class="fa fa-calendar"></i> <?php echo get_the_date() ?></div>
                 </div>
                 <div class="cell medium-12 featured-image">

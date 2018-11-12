@@ -26,8 +26,12 @@ while(have_posts()) {
             <p class="cell medium-12"><?php the_excerpt() ?></p>
         </div>
         <div class="index-meta cell medium-12 grid-x">
-            <span class="cell medium-3 small-4"><i class="fa fa-user"></i> <?php the_author() ?> </span>
-            <span class="cell medium-3 hide-for-small-only"><i class="fa fa-list"></i> <?php echo $nokhbe_categories[0]->cat_name ?></span>
+            <a class="cell medium-3 small-4" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ),
+             get_the_author_meta( 'user_nicename' ) ) );   ?> "><i class="fa fa-user"></i> <?php the_author() ?>
+            </a>
+            <a class="cell medium-3 hide-for-small-only" href="<?php echo esc_url( get_category_link( $nokhbe_categories[0]->cat_ID ) ) ?>">
+                <i class="fa fa-list"></i> <?php echo $nokhbe_categories[0]->cat_name ?>
+            </a>
             <span class="cell medium-3 small-4">
                 <i class="fa fa-comment"></i>
 	            <?php
