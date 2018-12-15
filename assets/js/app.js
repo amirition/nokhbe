@@ -9,4 +9,8 @@ jQuery(document).ready(function($) {
             console.log("tested");
         });
     }
+
+    $(document).on( "click", ".search-trigger", function() {
+        $(".header-search .search-form").toggleClass("opened");
+    } );
 });

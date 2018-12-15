@@ -39,15 +39,6 @@ Fix some bugs and delete unnecessary codes
 = 1.0 =
 * Initial release
 
-== Upgrade Notice ==
-
-= 1.0 =
-* Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-
-* This version fixes a security related bug.  Upgrade immediately.
-
 == Resources ==
 * Foundation zurb Framework © 1998–2018 ZURB Inc, MIT
 * Font Awesome 4.7.0 @ davegandy, (Font: SIL OFL 1.1, CSS: MIT License)

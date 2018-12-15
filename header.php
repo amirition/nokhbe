@@ -12,7 +12,7 @@
         </a>
     </div>
     <header class="top-bar grid-x cell medium-10 medium-offset-1 top-menu">
-        <nav class="top-bar-left top-menu cell medium-5 small-12 grid-x">
+        <nav class="top-bar-left top-menu cell medium-10 small-12 grid-x">
 	        <?php
 	        wp_nav_menu(array(
 		        'theme_container'                   =>  'top-menu',
@@ -25,7 +25,15 @@
 	        ));
 	        ?>
         </nav>
-
+        <div class="header-search cell medium-2 small-12">
+            <div class="search-trigger grid-x">
+                <i class="fa fa-search"></i>
+            </div>
+            <form class="search-form grid-x" action="<?php echo get_site_url(); ?>">
+                <input class="cell small-11" type="text" name="s" placeholder="<?php _e("تایپ کنید ...", "nokhbe"); ?>">
+                <div class="search-trigger cell small-1"><i class="fa fa-close"></i> </div>
+            </form>
+        </div>
     </header>
     <?php if (get_theme_mod('nokhbe_featured_cat')) {
         ?>

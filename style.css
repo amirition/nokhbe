@@ -5,7 +5,7 @@
  Author URI: http://amirition.ir
  Text Domain: nokhbe
  Theme URI: http://wpdemos.ir/nokhbe-en/
- Version: 1.2.36
+ Version: 1.3.0
  Domain Path: /languages
  License URI: http://www.gnu.org/licenses/gpl-2.0.html
  Tags: featured-images, footer-widgets, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, news
@@ -94,6 +94,60 @@ button.button.primary:hover {
 }
 
 /* Header */
+.header-search {
+    padding: .9rem;
+    position: relative;
+}
+.header-search > .search-trigger {
+    right: 10px;
+    bottom: 5px;
+    position: absolute;
+}
+.search-form input{
+    padding: 0;
+    border-width: 0;
+}
+.search-form i {
+    font-size: 0;
+}
+.search-form {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    bottom: -5px;
+    width: 30px;
+    visibility: hidden;
+    right: 5px;
+    flex-direction: row-reverse;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;;
+}
+.search-form input {
+    margin: 0;
+    width: 90%;
+    display: inline-block;
+}
+.search-trigger:hover {
+    cursor: pointer;
+}
+.search-trigger.hide {
+    display: none;
+}
+.search-form.opened {
+    width: 300px;
+    visibility: visible;
+}
+.search-form.opened input {
+    padding: .9rem;
+    border-width: 1px;
+}
+.search-form.opened i {
+    font-size: 16px;
+}
 .site-title {
     padding: 1.5rem 0;
 }
@@ -104,7 +158,11 @@ button.button.primary:hover {
     font-size: 30px;
     font-family: "Lato", sans-serif;
 }
-
+.top-bar {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 .top-bar-left i {
     font-size: 18px;
 }
@@ -129,9 +187,6 @@ button.button.primary:hover {
     color: #31AFD4;
 }
 
-.features {
-    background: #4F5655;
-}
 
 .features .header-article {
     margin-top: 1rem;

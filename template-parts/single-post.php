@@ -29,9 +29,19 @@ while(have_posts()) {
             <a class="cell medium-3 small-4" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ),
              get_the_author_meta( 'user_nicename' ) ) );   ?> "><i class="fa fa-user"></i> <?php the_author() ?>
             </a>
+            <?php if(has_category()) { ?>
             <a class="cell medium-3 hide-for-small-only" href="<?php echo esc_url( get_category_link( $nokhbe_categories[0]->cat_ID ) ) ?>">
                 <i class="fa fa-list"></i> <?php echo $nokhbe_categories[0]->cat_name ?>
             </a>
+            <?php }
+            else {
+                ?>
+                <span class="cell medium-3 hide-for-small-only">
+                    <i class="fa fa-list"></i> <?php _e("بدون دسته بندی", "nokhbe"); ?>
+                </span>
+                <?php
+            }
+            ?>
             <span class="cell medium-3 small-4">
                 <i class="fa fa-comment"></i>
 	            <?php
