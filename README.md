@@ -1,45 +1,32 @@
-=== Nokhbe ===
-Contributors: amirition
-Tags: featured-images, footer-widgets, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, news
-Requires at least: 4.0
-Tested up to: 4.9.8
-Stable tag: 1.2.35
-License: GPLv2 or later
+# Nokhbe Wordpress theme 
+
+Nokhbe is a free and minimal wordpress theme suitable for blog and small magazines. 
+You can use nokhbe on an rtl website too and also translate it into your own language.
+
+## Installing 
+You can download the last unstable release of the theme from this github account, but if you want only the stable version, you can go to wordpress repository or download the last release from releases section of this project. 
+
+## License  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A Free Minimal Blog and Multipurpose Wordpress theme . This theme is completely responsive and cross browser.
+## Changelog
 
-== Description ==
-Nokhbe is a minimal blog and multipurpose theme that can be used on any site.
-This theme supports some custome features and you can use theme in customizer.
-Any rtl language can use this theme and also translate it into his own language.
+#### 1.3.0
+Add the search bar to the top bar and add some little features to the theme, also fixed some minor bugs 
 
-== Frequently Asked Questions ==
-
-== Changelog ==
-
-= 1.2.36 =
+#### 1.2.36
 Update the readme file
 
-= 1.2.33 =
+#### 1.2.33
 Update the LICENSE file
+Fix some minor bugs
+#### 1.2
+Meeting wordpress theme development requirements
 
-= 1.2.3 =
-* Fix some minor bugs
+#### 1.0 
+Initial release
 
-= 1.2.2 =
-Fix some bugs
-
-= 1.2.1 =
-Fix some bugs and delete unnecessary codes
-
-= 1.2 =
-* Meeting wordpress theme development requirements
-
-= 1.0 =
-* Initial release
-
-== Resources ==
+## Resources
 * Foundation zurb Framework © 1998–2018 ZURB Inc, MIT
 * Font Awesome 4.7.0 @ davegandy, (Font: SIL OFL 1.1, CSS: MIT License)
 * Samim open font @ 2015 Saber Rastikerdar, SIL

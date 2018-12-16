@@ -3,7 +3,7 @@ Contributors: amirition
 Tags: featured-images, footer-widgets, rtl-language-support, theme-options, threaded-comments, translation-ready, blog, news
 Requires at least: 4.0
 Tested up to: 4.9.8
-Stable tag: 1.2.35
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,11 @@ Any rtl language can use this theme and also translate it into his own language.
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+= 1.3.0 =
+* Add the search bar to the top bar
+* Link to user and category in single post
+* Change the design a little bit
 
 = 1.2.36 =
 Update the readme file
